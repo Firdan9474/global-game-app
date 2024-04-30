@@ -1,0 +1,277 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(245deg, #000000,#373737);
+}
+
+.layar-dalam{
+    width: 1000px;
+    margin:auto;
+}
+
+.layar-penuh{
+    width: 100%;
+}
+
+
+
+nav .logo {
+    float:  left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+}
+
+nav .logo img {
+    vertical-align: middle;
+    width: 90px;
+    height: 60px;
+}
+
+nav{
+    z-index: 100;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1.5px solid #ffffff;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+nav.putih{
+    background: linear-gradient(135deg, #5d5d5d, #e2e2e2);
+}
+
+nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+
+nav ul li a {
+    color: #FF0575;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .line {
+    height: 3px;
+    background-color: aliceblue;
+}
+
+
+nav.putih {
+    background-color: white;       
+}
+
+nav.putih ul li a{
+    color: black;
+}
+
+nav.putih .tombol-menu .line {
+    background-color: #333;
+}
+
+nav .logo img.black {
+    display: none;
+}
+
+
+section {
+    padding: 50px 0px 50px 0px;
+}
+
+section.grey {
+    background: linear-gradient(135deg, #e2e2e2,#5d5d5d);
+}
+
+.grey h3{
+    text-align: center;
+}
+
+.dashboard-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 0; /* Menetapkan tinggi 0, karena tinggi akan diatur oleh padding-top */
+    padding-top: 56.25%; /* Rasio aspek 16:9 */
+}
+
+.content-visual li{
+    margin-top: -20px;
+    list-style-type: none;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.content-visual a{
+    text-decoration: none;
+    color: white;
+}
+
+.content-visual ul li span {
+    color: white;
+    background-color: #880a60;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+iframe {
+    padding-top: 80px;
+    position: absolute;
+    top: 0;
+    left: 0; /* Mengatur posisi ke kiri agar memenuhi lebar layar */
+    width: 100%; /* Mengatur lebar menjadi 100% dari lebar layar */
+    height: 86%;
+}
+
+/* ================================ Footer ================================================ */
+
+footer {
+    padding: 50px 0;
+    background: linear-gradient(135deg, #e2e2e2, #5d5d5d);
+}
+#about-description a{
+    color: #000;
+}
+
+footer .layar-dalam {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .layar-dalam div {
+    width: calc(33.33% - 20px); /* Tiga kolom dengan jarak antara */
+    margin-bottom: 20px;
+}
+
+footer .layar-dalam h5 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+footer .layar-dalam a{
+    text-decoration: none;
+}
+
+footer .layar-dalam p {
+    margin: 10px 0;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+footer .layar-dalam .copyright {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px solid #101010;
+    text-align: center;
+}
+
+/* end footer */
+
+/* ==================================  General Responsive =============================================== */
+@media screen and (max-width: 991.98px) {
+    .layar-dalam {
+        width: 90%;
+    }
+    nav .menu ul {
+        display: none;
+        margin-top: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+    }
+    nav .menu ul li{
+        width: 100%;
+        border-bottom: 1px solid whitesmoke;
+        background-color: rgb(255, 255, 255);
+        line-height: 40px;
+    
+    }
+    nav .menu ul li a{
+        color: #333;
+    }
+    iframe {
+        width: 100%; /* Mengatur lebar menjadi 100% dari lebar layar */
+        height: 100%;
+    }
+    .content-visual li{
+        padding-top: 10px;
+    }
+    .tombol-menu{
+        display: flex;
+    }
+    .content-visual li{
+        margin-top: 10px;
+        list-style-type: none;
+        text-align: right;
+        margin-right: 30px;
+    }
+    footer {
+        margin-top: 220px;
+        padding-top: 50px;
+        width: 100%;
+    }
+    footer .layar-dalam p,a
+    {
+        margin-top: -20px;
+        -webkit-line-clamp: 2;
+    }
+    footer .layar-dalam div {
+        width: 100%;
+    }
+}
+
+/* end responsive */
+

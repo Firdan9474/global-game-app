@@ -1,0 +1,872 @@
+* /* General Styles */
+{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(245deg, #000000, #373737);
+}
+
+.layar-dalam {
+    max-width: 1000px;
+    margin: auto;
+
+}
+
+.layar-penuh {
+    width: 100%;
+}
+
+/* ============================== style pop up scrooll ke ataas ================= */
+.scroll-up-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(190, 40, 122);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+
+  
+  .scroll-up-popup.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .scroll-up-icon {
+    font-size: 24px;
+  }
+/* end pop up */
+
+
+nav{
+    z-index: 100;
+    color: aqua;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1.5px solid #ffffff;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+nav.putih{
+    background: linear-gradient(135deg, #5d5d5d, #e2e2e2);
+}
+
+nav .logo {
+    float:  left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+}
+
+nav .logo img {
+    vertical-align: middle;
+    width: 90px;
+    height: 60px;
+}
+
+nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+
+nav ul li a {
+    color: rgb(236, 40, 148);
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* header setting */
+
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover; /* ini buat nyesuain ukuran video biar sesuai ama ukuran header */
+    width: 100%; /* lebar */
+    height: 100%; /* tinggi */
+    z-index: -2;
+}
+
+header .intro {
+    z-index: 100;
+    color: rgb(236, 40, 148);
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+
+header .intro h3 {
+    font-size: 56px;
+    margin: 0;
+    padding: 0;
+}
+
+.tombol {
+    background-color: rgb(236, 40, 148);
+    height: 40px;
+    line-height: 42px;
+    color: aliceblue;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px 0 20px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+
+/*=================== memberikan saturnasi ==================================*/
+header .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 45%;
+    z-index: -1;
+}
+
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .line {
+    height: 3px;
+    background-color: aliceblue;
+}
+
+nav.putih {
+    background-color: white;       
+}
+
+nav.putih ul li a{
+    color: black;
+}
+
+nav.putih .tombol-menu .line {
+    background-color: #333;
+}
+
+nav .logo img.black {
+    display: none;
+}
+section {
+    padding: 50px 0px 50px 0px;
+}
+
+/* ========================Punya About Us ==========================================*/
+#about{
+    text-align: center;
+    background-color: #333;
+}
+
+section h3::after{
+    content: "";
+    border-bottom: 5px solid #f90606;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+}   
+section p.ringkasan {
+    font-style: italic;
+    font-size: 18px;
+    color: rgb(236, 40, 148);
+}
+
+section h3 {
+    font-size: 30px;
+    color: white;
+}
+section h5{
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    color: aquamarine;
+}
+
+section .konten-isi p{
+    font-style: normal;
+    color: white;
+    text-indent: 30px;
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 1.5;
+}
+#about .konten-isi ol {
+    text-align: left; /* Mengatur tata letak poin menjadi rata kiri */
+    margin-left: 0; /* Menghilangkan indentasi kiri pada daftar */
+    padding-left: 0; /* Menghilangkan padding kiri pada daftar */
+    list-style-position: inside; /* Menempatkan poin di dalam daftar */
+    color: white;
+}
+
+#about .konten-isi ol li {
+    text-align: left; /* Mengatur tata letak poin menjadi rata kiri */
+    color: white;
+}
+#about .konten-isi ol a {
+    color: rgb(236, 40, 148);
+}
+
+/* End About US and Career */
+
+/* =============================Punya Data Acquitations ============================ */
+/* section.grey {
+    background: linear-gradient(135deg, #e2e2e2,#bbbbbb);
+} */
+
+.grey h3{
+    text-align: center;
+    display: block;
+}
+.konten-isi-data-acquisition p {
+    font-style: normal;
+    color: white;
+    text-indent: 30px; /* Jarak dari sisi kiri */
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 1.5;
+    padding-left: 10%; /* Jarak dari sisi kiri */
+    padding-right: 15%; /* Jarak dari sisi kanan */
+}
+.konten-isi-data-acquisition a{
+    color: rgb(236, 40, 148);
+    text-decoration: none;
+}
+.img-icon-acquisi img {
+    display: block; /* Mengubah elemen img menjadi blok agar margin auto bisa bekerja */
+    width: 10%; /* Menetapkan lebar gambar */
+    max-width: 100%; /* Membatasi lebar maksimum agar gambar tidak melebihi lebar kontainer */
+    margin: 0 auto; /* Memberikan margin otomatis di sisi kiri dan kanan untuk membuat gambar menjadi pusat */
+    padding-bottom: 20px;
+}
+.img-data-acquisi img {
+    display: block; /* Mengubah elemen img menjadi blok agar margin auto bisa bekerja */
+    width: 60%; /* Menetapkan lebar gambar */
+    max-width: 100%; /* Membatasi lebar maksimum agar gambar tidak melebihi lebar kontainer */
+    margin: 0 auto; /* Memberikan margin otomatis di sisi kiri dan kanan untuk membuat gambar menjadi pusat */
+    padding-bottom: 20px;
+}
+
+.data-acquisitations {
+    padding: 18px 10px 10px 10px;
+    background-color: #e2e2e2;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.data-acquisitations h5{
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* .data-acquisitations img{
+    width: 160px;
+    height: 120px;
+    border-radius: 10px;
+} */
+
+.data-acquisitations div{
+    text-align: center;
+    width: 26%;
+}
+
+.data-acquisitations p{
+    text-align: left;
+}
+
+/* ============================== Pemahaman Bisnis & Definisi Masalah  ======================================= */
+
+.konten-isi-business-understanding p {
+    font-style: normal;
+    color: white;
+    text-indent: 30px; /* Jarak dari sisi kiri */
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 1.5;
+    padding-left: 10%; /* Jarak dari sisi kiri */
+    padding-right: 15%; /* Jarak dari sisi kanan */
+}
+.img-business-understanding img {
+    display: block; /* Mengubah elemen img menjadi blok agar margin auto bisa bekerja */
+    width: 10%; /* Menetapkan lebar gambar */
+    max-width: 100%; /* Membatasi lebar maksimum agar gambar tidak melebihi lebar kontainer */
+    margin: 0 auto; /* Memberikan margin otomatis di sisi kiri dan kanan untuk membuat gambar menjadi pusat */
+    padding-bottom: 20px;
+}
+.step-business-understanding p{
+    font-style: normal;
+    color: white;
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 1.5;
+    padding-left: 10%; /* Jarak dari sisi kiri */
+    padding-right: 15%; /* Jarak dari sisi kanan */
+}
+.step-business-understanding span{
+    background-color: rgb(148, 23, 92);
+    padding: 5px;
+    padding-right: 100px;
+    margin-right: 10px;
+    border-radius: 0px 50px 0px 0px;
+}
+.step-business-understanding ul{
+    color: white;
+    padding-left: 11.1%; /* Jarak dari sisi kiri */
+    
+
+}
+.data-business-understanding {
+    padding: 18px 10px 10px 10px;
+    background-color: #e2e2e2;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.business-understanding h5{
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.business-understanding div{
+    text-align: center;
+    width: 26%;
+}
+
+.business-understanding p{
+    text-align: left;
+}
+/* end Pemahaman Bisnis & Definisi Masalah */
+
+/* ========================== Data Preparation ========================================== */
+.konten-isi-data-preparation p {
+    font-style: normal;
+    color: white;
+    text-indent: 30px; /* Jarak dari sisi kiri */
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 1.5;
+    padding-left: 10%; /* Jarak dari sisi kiri */
+    padding-right: 15%; /* Jarak dari sisi kanan */
+}
+.konten-isi-data-preparation a{
+    color: rgb(236, 40, 148);
+    text-decoration: none;
+}
+.konten-isi-data-preparation ul {
+    font-style: normal;
+    color: white;
+    text-indent: 10px; /* Jarak text antara format lis dari sisi kiri */
+    text-align: justify;
+    padding-left: 11.1%; /* Jarak dari sisi kiri */
+}
+.img-data-preparation img {
+    display: block; /* Mengubah elemen img menjadi blok agar margin auto bisa bekerja */
+    width: 60%; /* Menetapkan lebar gambar */
+    max-width: 100%; /* Membatasi lebar maksimum agar gambar tidak melebihi lebar kontainer */
+    margin: 0 auto; /* Memberikan margin otomatis di sisi kiri dan kanan untuk membuat gambar menjadi pusat */
+    padding-bottom: 20px;
+}
+
+/* .data-data-preparation {
+    padding: 18px 10px 10px 10px;
+    background-color: #e2e2e2;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.data-preparation h5{
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.data-preparation img{
+    width: 160px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.data-data-preparation div{
+    text-align: center;
+    width: 26%;
+}
+
+.data-data-preparation p{
+    text-align: left;
+} */
+/* end Data Preparation */
+
+/* ========================== eda modelling ================================= */
+
+.konten-isi-eda-modelling p {
+    font-style: normal;
+    color: white;
+    text-indent: 30px; /* Jarak dari sisi kiri */
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 1.5;
+    padding-left: 10%; /* Jarak dari sisi kiri */
+    padding-right: 15%; /* Jarak dari sisi kanan */
+}
+.konten-isi-eda-modelling ul {
+    font-style: normal;
+    color: white;
+    text-indent: 14px; /* Jarak text antara format lis dari sisi kiri */
+    text-align: justify;
+    padding-left: 11.1%; /* Jarak dari sisi kiri */
+}
+.img-eda-modelling img {
+    display: block; /* Mengubah elemen img menjadi blok agar margin auto bisa bekerja */
+    padding-top: 10px;
+    width: 53%; /* Menetapkan lebar gambar */
+    max-width: 100%; /* Membatasi lebar maksimum agar gambar tidak melebihi lebar kontainer */
+    margin: 0 auto; /* Memberikan margin otomatis di sisi kiri dan kanan untuk membuat gambar menjadi pusat */
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* end eda modelling */
+
+
+/* ==================================== Evaluation ====================================== */
+.konten-isi-evaluation p {
+    font-style: normal;
+    color: white;
+    text-indent: 30px; /* Jarak dari sisi kiri */
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 1.5;
+    padding-left: 10%; /* Jarak dari sisi kiri */
+    padding-right: 15%; /* Jarak dari sisi kanan */
+}
+/* end evaluation */
+/* ==================================== Evaluation ====================================== */
+.konten-isi-data-visualitation p {
+    font-style: normal;
+    color: white;
+    text-indent: 30px; /* Jarak dari sisi kiri */
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 1.5;
+    padding-left: 10%; /* Jarak dari sisi kiri */
+    padding-right: 15%; /* Jarak dari sisi kanan */
+}
+.konten-isi-data-visualitation img{
+    width: 43%;
+    border-radius: 5px;
+}
+.konten-isi-data-visualitation p a{
+    color: rgb(236, 40, 148);
+    text-decoration: none;
+}
+
+.konten-isi-data-visualitation img {
+    display: block; /* Mengubah elemen img menjadi blok agar margin auto bisa bekerja */
+    padding-top: 10px;
+    width: 35%; /* Menetapkan lebar gambar */
+    max-width: 100%; /* Membatasi lebar maksimum agar gambar tidak melebihi lebar kontainer */
+    margin: 0 auto; /* Memberikan margin otomatis di sisi kiri dan kanan untuk membuat gambar menjadi pusat */
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+/* end evaluation */
+/* ============================== communication ==================================== */
+
+.konten-isi-data-communication p {
+    font-style: normal;
+    color: white;
+    text-indent: 30px; /* Jarak dari sisi kiri */
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 1.5;
+    padding-left: 10%; /* Jarak dari sisi kiri */
+    padding-right: 15%; /* Jarak dari sisi kanan */
+}
+.konten-isi-data-communication p a{
+    color: rgb(236, 40, 148);
+    text-decoration: none;
+}
+.konten-isi-data-communication img {
+    display: block; /* Mengubah elemen img menjadi blok agar margin auto bisa bekerja */
+    padding-top: 10px;
+    width: 35%; /* Menetapkan lebar gambar */
+    max-width: 100%; /* Membatasi lebar maksimum agar gambar tidak melebihi lebar kontainer */
+    margin: 0 auto; /* Memberikan margin otomatis di sisi kiri dan kanan untuk membuat gambar menjadi pusat */
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* end communication */
+
+/*========== general style others ============ */
+.line {
+    margin-left: 10%;
+    margin-right: 15%;
+    border-bottom: 2px solid rgb(90, 88, 89);
+}
+/* enda general style others */
+
+/* ==================================== general konten python ====================================*/
+#main-container-python
+ {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container {
+    background-color: #353434;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 50%;
+    width: 100%;
+    position: relative; /* Menjadikan posisi tombol terkait dengan container */
+   
+}
+.container h1 {
+    color: #ffffff;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: left;
+    border-bottom: 2px solid rgb(236, 40, 148); /* Tambahkan garis bawah putih dengan ketebalan 2px */
+}
+.container p {
+    color: #fffefe;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1em; /* Menggunakan unit em untuk responsivitas */
+    line-height: 1.5em; /* Menyesuaikan line-height dengan font-size */
+    width: 100%; /* Menambahkan width agar mengikuti lebar container */
+    box-sizing: border-box; /* Menyertakan padding dan border dalam perhitungan lebar */
+}
+
+button {
+    position: absolute; /* Mengatur posisi tombol secara absolut */
+    bottom: 10px; /* Jarak dari bawah */
+    right: 10px; /* Jarak dari kanan */
+    border: none;
+    background: none; /* Menghapus latar belakang */
+    cursor: pointer;
+}
+
+#copyButton-data-preparation,
+#copyButton-eda-1,
+#copyButton-eda-2, 
+i {
+    font-size: 24px; 
+    color: rgb(236, 40, 148);
+}
+
+#copyButton:focus {
+    outline: none; /* Menghapus border focus */
+}
+
+.python {
+    color: #3572A5; /* Warna Python */
+}
+
+
+button {
+    position: absolute; /* Mengatur posisi tombol secara absolut */
+    bottom: 10px; /* Jarak dari bawah */
+    right: 10px; /* Jarak dari kanan */
+    border: none;
+    background: none; /* Menghapus latar belakang */
+    cursor: pointer;
+}
+
+#copyButton i {
+    font-size: 24px; 
+    color: rgb(236, 40, 148);
+}
+
+#copyButton:focus {
+    outline: none; /* Menghapus border focus */
+}
+
+.python {
+    color: #fff200e1; /* Warna Python */
+}
+.python2 {
+    color: #87c4f6;
+}
+
+
+/* end python */
+
+/* ======================== Style Notes ============================== */
+.notes{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.notes h3{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+
+}
+.isi-notes p{
+    font-style: normal;
+    color: white;
+    text-indent: 30px; /* Jarak dari sisi kiri */
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 1.5;
+    padding-left: 10%; /* Jarak dari sisi kiri */
+    padding-right: 15%; /* Jarak dari sisi kanan */
+}
+
+.ringkasan-notes{
+        text-align: center;
+        font-style: italic;
+        font-size: 18px;
+        color: aquamarine;
+}
+
+.notes h3::after{
+    content: "";
+    border-bottom: 5px solid #f90606;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+}
+
+#main-container-notes{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding-bottom: 40px;
+}
+.container-notes {
+    border-radius: 4px;
+    box-shadow: 0 10px 10px rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    max-width: 50%;
+    width: 100%;
+    position: relative; /* Menjadikan posisi tombol terkait dengan container */
+   
+}
+
+.container-notes p {
+    color: #1deedc;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1em; /* Menggunakan unit em untuk responsivitas */
+    line-height: 1.5em; /* Menyesuaikan line-height dengan font-size */
+}
+
+/* end notes */
+/*  =============================== style footer ==================================*/
+footer {
+    padding: 50px 0;
+    background: linear-gradient(135deg, #e2e2e2, #5d5d5d);
+}
+#about-description a{
+    color: #000;
+}
+
+footer .layar-dalam {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .layar-dalam div {
+    width: calc(33.33% - 20px); /* Tiga kolom dengan jarak antara */
+    margin-bottom: 20px;
+}
+
+footer .layar-dalam h5 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+footer .layar-dalam a{
+    text-decoration: none;
+}
+
+footer .layar-dalam p {
+    margin: 10px 0;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+footer .layar-dalam .copyright {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px solid #101010;
+    text-align: center;
+}
+
+
+/* =========================================== general responsive minisize ======================================= */
+@media screen and (max-width: 991.98px) {
+    .layar-dalam {
+        width: 100%;
+    }
+    .layar-penuh {
+        width: 100%;
+    }
+    div h3{
+        font-size: 125%;
+    }
+    nav .menu ul {
+        display: none;
+        margin-top: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+    }
+    nav .menu ul li{
+        width: 100%;
+        border-bottom: 1px solid whitesmoke;
+        background-color: rgb(255, 255, 255);
+        line-height: 40px;
+    }
+    nav .menu ul li a{
+        color: #333;
+    }
+    .tombol-menu{
+        display: flex;
+    }
+
+    #about .konten-isi{
+        padding-left: 5%; /* Jarak dari sisi kiri */
+        padding-right: 5%; /* Jarak dari sisi kanan */
+    }
+
+    .data-acquisitations {
+        display: block;
+    }
+    .data-acquisitations div{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .container {
+        
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .img-eda-modelling img {
+        width: 80%; /* Menetapkan lebar gambar */
+    }
+
+    section#order{
+        display: block;
+    }
+    section#order div{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    section#order div img { 
+        text-align: center;
+    }
+    footer .layar-dalam p,a
+    {
+        margin-top: -20px;
+        -webkit-line-clamp: 2;
+    }
+    footer .layar-dalam div {
+        width: 100%;
+        padding-left: 3%; /* Jarak dari sisi kiri */
+        padding-right: 10%; /* Jarak dari sisi kanan */
+    }
+
+}
+
+@media (max-width: 768px) { /* Untuk tablet */
+    .container {
+        max-width: 75%;
+    }
+    .container p {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) { /* Untuk mobile */
+    .container {
+        max-width: 90%;
+    }
+    .container p {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+}

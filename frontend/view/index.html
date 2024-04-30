@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div id="scrollUpPopup" class="scroll-up-popup">
+        <span id="scrollUpIcon" class="scroll-up-icon">&#9650;</span>
+      </div>
+    <nav>
+        <!-- Navbar -->
+        <div class="layar-dalam">
+            <div class="logo">
+                <a href=""> <img src="../asset/GG.png" class="putih" />
+                </a>
+                <a href=""> <img src="../asset/GG.png" class="black" />
+                </a>
+            </div>
+            <div class="menu">
+                <a href="#" class="tombol-menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </a>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang kami</a></li>
+                    <li><a href="../view/dashboard.html">Visualisasi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Video -->
+    <div class="layar-penuh">
+        <header id="home">
+            <div class="overlay"></div>
+            <video autoplay muted loop>
+                <source src="../asset/video1.mp4" type="video/mp4" />
+            </video>
+            <div class="intro">
+                <h3>Game Global</h3>
+                <p>Dokumentasi Analisis Video Game Global</p>
+                <p>
+                    <a href="#about" class="tombol">INFO</a>
+                </p>
+            </div>
+        </header>
+    <main>
+        <section id="about">   
+            <div class="layar-dalam">
+                            <!-- <img src="/asset/img1.jpg" > -->
+                <h3 class="about">Tentang Kami</h3>
+                    <div class="ringkasan-about">
+                        <div class="konten-isi">
+                        <h5>Selamat datang di Proyek Capstone Analisis Data kami.</h5>
+                    <p>
+                        Dalam era digital saat ini, industri Video Game menjadi salah satu sektor yang terus berkembang dengan pesat, memperlihatkan tren peningkatan penjualan yang signifikan secara global. 
+                        Video game adalah gabungan teknologi, seni, dan pengalaman interaktif yang melibatkan pengembangan skenario, desain tindakan interaktif yang menghibur, aktivitas pemrograman, pengembangan karakter, 
+                        seni grafis, desain suara, musik, integrasi, serta tes dan penilaian kualitas.
+                        Alasan kami mengembangan produk ini sebagian besar dipengaruhi oleh pertumbuhan pesat industri Permainan Global. Kami melakukan serangkaian analisis data mengenai tren penjualan, preferensi konsumen, dan strategi pemasaran dianggap penting untuk mendukung pengambilan keputusan yang tepat dalam ekosistem yang semakin kompleks ini. 
+                        Bersamaan dengan itu, kami mengembangan produk ini disusun dengan mempertimbangkan kebutuhan industri game akan keterlibatan pengguna yang lebih baik dan keinginan untuk meningkatkan pengalaman bermain game. 
+                    </p> <br>
+                        <p>
+                            Kami menggunakan suatu metode pendekatan dari Analisis Data Eksplorasi (EDA), pendekatan ini digunakan untuk memperoleh pemahaman mendalam tentang data, di luar kerangka pemodelan formal atau pengujian hipotesis. EDA memainkan peran penting dalam menganalisis kumpulan data dengan tujuan merangkum karakteristik statistiknya secara signifikan. 
+                            Fokus utama EDA terdiri dari empat aspek utama, yaitu ukuran tendensi sentral (melibatkan mean, mode, dan median), ukuran dispersi (melibatkan standar deviasi dan varians), bentuk distribusi, dan identifikasi outlier. Pendekatan ini memberikan landasan yang kuat untuk mendeskripsikan dan menafsirkan struktur data secara holistik, memfasilitasi proses pengambilan keputusan yang lebih baik di berbagai bidang penelitian dan analisis. Dengan berkonsentrasi pada analisis bisnis, produk ini bertujuan untuk menerapkan konsep dan metodologi Analisis Data Eksplorasi (EDA) yang menjadi dasar utama untuk merinci wawasan awal dari dataset video game. Dengan memahami pentingnya pengambilan keputusan berbasis data, produk ini diharapkan mampu memberikan kontribusi langsung terhadap pengembangan sistem informasi di industri game, meningkatkan akurasi dan relevansi dalam pengambilan keputusan.
+                        </p>
+                        <p>
+                            Analisis dan visualisasi data peningkatan penjualan Video Game Global memiliki serangkaian tahapan atau alur pengembangan produk yang saling terkait satu sama lain. </p>
+                        </p>
+                            <ol>
+                        <li><a href="#data-acquisition">Akuisisi Data </a></li>
+                        <li><a href="#business-understanding">Pemahaman Bisnis & Definisi Masalah</a></li>
+                        <li><a href="#data-preparation">Persiapan Data</a></li>
+                        <li><a href="#eda-modelling">Analisis dan Pemodelan Eksplorasi</a></li>
+                        <li><a href="#evaluation">Evaluasi</a></li>
+                        <li><a href="#visualization">Data Visualisasi</a></li>
+                        <li><a href="#communication">Data Komunikasi</a></li>
+                            </ol>
+                         </p>
+                     </div>
+                 </div>
+            </div>
+         </section>
+
+        <section class="grey" id="data-acquisition">
+            <h3> Akuisisi Data </h3>
+                <div class="img-icon-acquisi">
+                    <img src="../asset/analysis.png">
+                </div>
+            <div class="konten-isi-data-acquisition">
+                        <p>
+                            Akuisisi data adalah proses pengumpulan data dari berbagai sumber untuk tujuan analisis. Akuisisi data melibatkan proses mengidentifikasi dan memperoleh sumber data yang relevan dari berbagai sumber, baik internal maupun eksternal, untuk memastikan ketersediaan informasi yang diperlukan untuk menjawab pertanyaan bisnis dan mencapai tujuan analitis.
+                            </p>
+                        <p>  Data Video Game ini diambil dari platform <a href="https://www.kaggle.com/datasets/kendallgillies/video-game-sales-and-ratings/data">Kaggle</a> yang telah ditentukan oleh Revou. Data ini terdiri dari 17.417 entri game yang dirilis pada tahun 1976 hingga 2017 yang mencatat berbagai atribut game, antara lain nama, platform, tahun rilis, genre, penerbit, penjualan di berbagai wilayah (Amerika Utara, Eropa, Jepang, dan wilayah lainnya), serta serta total penjualan global. Selain itu, kumpulan data ini juga mencakup informasi tentang penilaian kritikus dan pengguna, serta peringkat usia.
+                            </p>
+                    </div>
+                <div class="img-data-acquisi">
+                    <img src="../asset/data_acquisi.png">
+                </div>
+                    <div class="line" style="padding-top: 40px;">
+                </div>
+            </section>
+
+            <section class="grey" id="business-understanding">
+                    <h3> Pemahaman Bisnis & Definisi Masalah </h3>
+                    <div class="img-business-understanding">
+                        <img src="../asset/problem.png">
+                    </div>
+                    <div class="konten-isi-business-understanding">
+                        <p>
+                            Dalam tahap ini, fokus utamanya adalah pada pemahaman mendalam terhadap industri Video Game secara Global. Dengan mengidentifikasi pemangku kepentingan seperti pengembang game, penerbit, dan pasar global. Business Understanding & Problem Definition bertujuan memahami tujuan bisnis dan masalah yang ingin dipecahkan melalui analisis data. tahapan ini memiliki bagian-bagian dari proses nya, berikut proses dari tahapan Business Understanding & Problem Definition :
+                        </p>
+                    </div>
+                    <div class="step-business-understanding">
+                        <p><strong><span>Permasalahan</span></strong>
+                            <br>Bagaimana meningkatkan penjualan game global dari 2.47% menjadi 4% dalam satu tahun kedepan.</p>     
+                        <p><strong><span>Tujuan</span></strong>
+                            <br>Menganalisis tren untuk meningkatkan penjualan game global dari 2.47% menjadi 4% dalam satu tahun kedepan.</p>              
+                        <p><strong><span>Root Cause - Issue Tree</span></strong>
+                            <br>Menganalisis tren penjualan dan faktor-faktor yang memengaruhinya, dengan fokus pada penerbit teratas, genre, game, dan wilayah untuk mengembangkan strategi pemasaran dan distribusi.</p>
+                        <p><strong><span>Metrik</span></strong>
+                            <br>Menggunakan penjualan global dan penjualan regional sebagai metrik utama. Metrik utama tersebut dibagi menjadi beberapa metrik turunan, diantaranya sebagai berikut.
+                            <br>
+                            <ul>
+                                <li>Penjualan Global</li>
+                            </ul>
+                        </p>
+                        <p>Penjualan global dari tahun ke tahun, Publisher dengan penjualan global tertinggi, Genre dengan penjualan global tertinggi, Game dengan penjualan global tertinggi. </p>
+                        <ul>
+                            <li>Penjualan Regional</li>
+                        </ul>
+                        <p>Penjualan game per wilayah.</p>
+                    </div>
+                        <div class="line">
+                    </div>
+                </section>
+
+            <section class="grey" id="data-preparation">
+                    <h3> Persiapan Data </h3>
+                    <div class="img-business-understanding">
+                        <img src="../asset/data-management.png">
+                    </div>
+                    <div class="konten-isi-data-preparation">
+                        <p>
+                            Pada tahap ini di lakukan proses analisis data mentah yang diperoleh dari berbagai sumber website <a href="https://www.kaggle.com/datasets/kendallgillies/video-game-sales-and-ratings/data">Kaggle</a> menggunakan Google Spreadsheets dan Google Colab. Proses persiapan data meliputi pembersihan data, 
+                            mengecek nilai yang hilang atau kosong dalam dataset, mengecek data yang duplikat, 
+                            mengecek format data dan mengecek kesalahan karakter ( typo ) data. 
+                            persiapan data melibatkan serangkaian langkah yang dirancang untuk memastikan bahwa data yang digunakan dalam analisis memiliki validitas, relevan, dan siap digunakan. Berikut adalah proses dari tahapan persiapan data.
+                        </p>
+                        <br>
+                        <ul>
+                            <li>Pembersihan Data</li>
+                        </ul>
+                        <p>
+                            Proses pembersihan data berawal dari <a href="https://www.kaggle.com/datasets/kendallgillies/video-game-sales-and-ratings/data">dataset</a> yang berjumlah 17.417 entri dipangkas menjadi 15.045. 
+                            Rentang tahun rilis data tersebut adalah dari 2001 hingga 2016. Data sebelum tahun 2001 dihapus karena dianggap tidak relevan, 
+                            sedangkan data tahun 2017 dianggap tidak valid karena jumlah entri yang terbatas. 
+                            Proses pembersihan data melibatkan pengecekan kesalahan penulisan, penanganan nilai yang hilang, serta penghapusan duplikasi.
+                        </p>
+                        <div class="img-data-preparation">
+                            <img src="../asset/data preparation.png">
+                        </div>
+                        <ul>
+                            <li>Pemformatan Data</li>
+                        </ul>
+                        <p>
+                            Setelah proses pembersihan data selesai, 
+                            tahap selanjutnya dilakukan pemformatan data untuk menyesuaikan dan 
+                            mengubah tipe data agar sesuai dengan kebutuhan analisis, 
+                            serta menormalkan nilai-nilai agar memiliki skala yang seragam dengan menggunakan bahasa pemrograman Python.
+                            Berikut adalah source code untuk melihat informasi type data dan cara mengubah tipe data melalui python. 
+                        </p>
+                    </div>
+                    <div id="main-container-python">
+                        <div class="container">
+                            <h1>Python</h1>
+                            <p> df_video_game_dc = df_video_game_og.copy<span class="python">( )</span> <br>
+                                df_video_game_dc.info <span class="python">( )</span> <br>
+                                df_video_game_dc <span class="python">['Critic_Score']</span> = pd.to_numeric <span class="python">(df_video_game_dc['Critic_Score'], errors='coerce')</span>.fillna<span class="python">(0)</span>.astype<span class="python">(int)</span> <br>
+                                df_video_game_dc <span class="python">['Critic_Count']</span> = pd.to_numeric <span class="python">(df_video_game_dc['Critic_Count'], errors='coerce')</span>.fillna<span class="python">(0)</span>.astype<span class="python">(int)</span> <br>
+                                df_video_game_dc <span class="python">['User_Score']</span> = pd.to_numeric <span class="python">(df_video_game_dc['User_Score'], errors='coerce')</span>.fillna<span class="python">(0)</span>.astype<span class="python">(int)</span> <br>
+                                df_video_game_dc <span class="python">['User_Count']</span> = pd.to_numeric <span class="python">(df_video_game_dc['User_Count'], errors='coerce')</span>.fillna<span class="python">(0)</span>.astype<span class="python">(int)</span> <br>
+                            </p>
+                            <button id="copyButton-data-preparation"><i class="fas fa-copy"></i></button>
+                        </div>
+                    </div>
+                        <div class="line" style="padding-top: 40px;">
+                    </div>
+            </section>
+
+            <section class="grey" id="eda-modelling">
+                    <h3> Analisis dan Pemodelan Eksplorasi </h3>
+                    <div class="img-business-understanding">
+                        <img src="../asset/exploration.png">
+                    </div>
+                    <div class="konten-isi-eda-modelling">
+                        <p>
+                            Eksplorasi Data adalah tahapan dalam proses analisis data yang bertujuan untuk memahami pola, hubungan, dan struktur dalam data. Eksplorasi Data ini menggambarkan proses analisis data yang dilakukan untuk mengidentifikasi pola atau tren yang melibatkan pembuatan grafik, perhitungan statistik, serta eksplorasi berbagai teknik pemodelan yang relevan dari data yang dikumpulkan.
+                        </p>
+                        <p>
+                            Tahap dari eksplorasi data ini menggambarkan proses analisis data yang dilakukan untuk mengidentifikasi pola atau tren yang melibatkan pembuatan grafik, perhitungan statistik, serta eksplorasi berbagai teknik pemodelan yang relevan dari data yang dikumpulkan.  
+                            Eksplorasi Data ini menghasilkan sebuah trend penjualan game secara global dari tahun ke tahun, top 5 dari publisher game, top 5 dari penjualan game secara global, top 5 dari genre game serta game paling laris penjualannya di wilayah Amerika Utara, Eropa, Jepang dan wilayah lainnya.
+                            <br><br>
+                            Berikut adalah potongan kode dari tahapan eksplorasi data menggunakan Python.
+                        </p>
+                            <br>
+                        <ul>
+                            <li>Analisis Statistik Deskriptif</li>
+                        </ul>
+                        <p> Tahap pertama dalam melakukan analisis eksplorasi yaitu melihat ringkasan statistik deskriptif dari beberapa variabel numerik dalam dataset Video Game.
+                            Tujuan ringkasan ini untuk memberikan pemahaman awal tentang data tersebut sebelum melakukan analisis lebih lanjut.
+                        </p>
+                    </div>
+                        <div id="main-container-python">
+                            <div class="container">
+                                <h1>Python</h1>
+                                <p> df_eda = df_video_game_dc.copy<span class="python">( )</span> <br>
+                                    df_eda.describe<span class="python">( )</span>.transpose <span class="python">( )</span>
+                                </p>
+                                <button id="copyButton-eda-1"><i class="fas fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="img-eda-modelling">
+                            <img src="../asset/statistik_deskriptif.png">
+                        </div>
+
+                    <div class="konten-isi-eda-modelling">
+                        <ul>
+                            <li>Analisis Tren Penjualan Tiap Tahun</li>
+                        </ul>
+                        <p>Pada analisis EDA ini mencari tren penjualan global setiap tahun dengan informasi tahun rilis dari setiap game. Data di kelompokan berdasarkan tahun, total penjualan global setiap tahun dan dilakukan perhitungan. hasil analisis tersebut menunjukkan total penjualan global untuk setiap tahun dari tahun 2001 hingga 2016.</p>
+                    </div>
+                    <div id="main-container-python">
+                        <div class="container">
+                            <h1>Python</h1>
+                            <p> sales_per_year = df_eda.groupby<span class="python"> ('Year_of_Release')['Global_Sales']</span><span class="python2">.sum</span><span class="python">( )</span>.reset_index<span class="python">( )</span> <br>
+                                total_sales = sales_per_year<span class="python"> ['Global_Sales']</span><span class="python2">.sum</span> <span class="python">( )</span> <br>
+                                sales_per_year<span class="python"> ['Global_Sales_Percentage'] </span> =<span class="python"> (sales_per_year['Global_Sales'] / total_sales)</span>*100<br>
+                                sales_per_year<span class="python"> ['Global_Sales_Percentage']</span> = sales_per_year<span class="python"> ['Global_Sales_Percentage']</span> .round<span class="python">(2)</span> <br>
+                                print<span class="python"> (sales_per_year)</span> <br>
+                                grand_total_sales = round<span class="python"> (sales_per_year['Global_Sales']<span class="python2">.sum</span><span class="python">())</span> <br>
+                                grand_total_sales_percentage = <span class="python2">round </span><span class="python"> (sales_per_year['Global_Sales_Percentage'] </span><span class="python2"> .sum</span><span class="python">())</span> <br> 
+                                print<span class="python"> ('Grand Total Penjualan Global:', grand_total_sales)</span> <br>
+                                print<span class="python">('Grand Total Persentase Penjualan Global:', grand_total_sales_percentage)</span>
+                            </p>
+                            <button id="copyButton-eda-2"><i class="fas fa-copy"></i></button>
+                        </div>
+                    </div>
+                    <div class="img-eda-modelling">
+                        <img src="../asset/penjualan_pertahun.png">
+                    </div>
+                    <div class="konten-isi-eda-modelling">
+                        <ul>
+                            <li>Game Dengan Penjualan Tertinggi Di Tiap Wilayah</li>
+                        </ul>
+                        <p>Pada proses analisis penjualan tertinggi di tiap wilayah dilakukan melalui mencari indeks baris dengan penjualan tertinggi berdasarkan masing-masing wilayah (NA_Sales, EU_Sales, JP_Sales, Other_Sales).
+                            Hasil analisis tersebut menunjukan penjualan game tertinggi yang menempati posisi teratas di tiap wilayah.
+                        </p>
+                    </div>
+                    <div id="main-container-python">
+                        <div class="container">
+                            <h1>Python</h1>
+                            <p> df_filtered = df_eda<span class="python">[(df_eda['Year_of_Release']</ >= 2013)</span> & <span class="python">(df_eda['Year_of_Release'] <= 2016)]</span> <br>
+                                grouped_sales = df_filtered.groupby<span class="python">('Name')</span>.<span class="python2">agg</span><span class="python">({
+                                    'NA_Sales': 'sum', <br>
+                                    'EU_Sales': 'sum', <br>
+                                    'JP_Sales': 'sum', <br>
+                                    'Other_Sales': 'sum' <br>
+                                }).reset_index()</span> 
+                                <br><br>
+                                top_games_na = df_eda.nlargest<span class="python">(3, 'NA_Sales')</span><br>
+                                top_games_eu = df_eda.nlargest<span class="python">(3, 'EU_Sales')</span><br>
+                                top_games_jp = df_eda.nlargest<span class="python">(3, 'JP_Sales')</span><br>
+                                top_games_other = df_eda.nlargest<span class="python">(3, 'Other_Sales')</span><br>
+                                <br>
+                                print<span class="python">('Top 3 games with the most sales in each region from 2013 to 2016:')</span><br>
+                                print<span class="python">('NA:')</span><br>
+                                <span class="python2">for</span> index, row <span class="python2">in</span> top_games_na.iterrows<span class="python">()</span>:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print <span class="python">(f'\t{row['Name']} - {row['NA_Sales']:.2f} million dollars')</span><br>
+
+                                print<span class="python">('EU:')</span><br>
+                                <span class="python2">for</span> index, row <span class="python2">in</span> top_games_eu.iterrows<span class="python">()</span>:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print <span class="python">(f'\t{row['Name']} - {row['EU_Sales']:.2f} million dollars')</span><br>
+                                
+                                print<span class="python">('JP:')</span><br>
+                                <span class="python2">for</span> index, row <span class="python2">in</span> top_games_jp.iterrows<span class="python">()</span>:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print <span class="python">(f'\t{row['Name']} - {row['JP_Sales']:.2f} million dollars')</span><br>
+                                
+                                print<span class="python">('Other:')</span><br>
+                                <span class="python2">for</span> index, row <span class="python2">in</span> top_games_other.iterrows<span class="python">()</span>:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print <span class="python">(f'\t{row['Name']} - {row['Other_Sales']:.2f} million dollars')</span>
+                                
+                            </p>
+                            <button id="copyButton-eda-3"><i class="fas fa-copy"></i></button>
+                        </div>
+                    </div>
+                    <div class="img-eda-modelling">
+                        <img src="../asset/game_per_region.png">
+                    </div>
+
+                    <div class="konten-isi-eda-modelling">
+                        <ul>
+                            <li>Top 5 Publisher Dengan Penjualan Tertinggi Di Dunia</li>
+                        </ul>
+                        <p>Proses selanjutnya mencari Top 5 Publisher dengan menganalisis total penjualan global berdasarkan publisher game pada dataset Video Game. 
+                        Data dikelompokkan berdasarkan kolom Publisher, dan kemudian dihitung total penjualan global untuk setiap publisher.
+                        </p>
+                    </div>
+                    <div id="main-container-python">
+                        <div class="container">
+                            <h1>Python</h1>
+                            <p> 
+                                df_filtered = df_eda<span class="python">[(df_eda['Year_of_Release']</ >= 2013)</span> & <span class="python">(df_eda['Year_of_Release'] <= 2016)]</span> <br>
+                                sales_publisher = df_eda.groupby<span class="python"> ('Publisher').agg({'Global_Sales': pd.Series.<span class="python2">sum</span>})</span><br>
+                                top_publishers.nlargest<span class="python">(5, 'Global_Sales')</span><br>
+                                print<span class="python">('Top 5 publishers with the most global sales from 2013 to 2016:')</span><br>
+                                print<span class="python">(top_publishers)</span>  
+                            </p>
+                            <button id="copyButton-eda-4"><i class="fas fa-copy"></i></button>
+                        </div>
+                    </div>
+                    <div class="img-eda-modelling">
+                        <img src="../asset/top_5_publisher.png">
+                    </div>
+
+                    <div class="konten-isi-eda-modelling">
+                        <ul>
+                            <li>Top 5 Genre Dengan Penjualan Tertinggi Di Dunia</li>
+                        </ul>
+                        <p>
+                            Pada proses analisis dari Top Global 5 Genre Game dengan penjualan terbesar dilakukan melalui analisis total penjualan global berdasarkan genre game pada dataset Video Game. 
+                            Data tersebut dikelompokkan berdasarkan kolom Genre, kemudian dihitung total penjualan global untuk setiap Genre.
+                        </p>
+                    </div>
+                    <div id="main-container-python">
+                        <div class="container">
+                            <h1>Python</h1>
+                            <p> 
+                                df_filtered = df_eda<span class="python">[(df_eda['Year_of_Release']</ >= 2013)</span> & <span class="python">(df_eda['Year_of_Release'] <= 2016)]</span> <br>
+                                sales_genre = df_eda.groupby<span class="python"> ('Genre').agg({'Global_Sales': pd.Series.<span class="python2">sum</span>})</span><br>
+                                top_genres.nlargest<span class="python">(5, 'Global_Sales')</span><br>
+                                print<span class="python">('Top 5 genre with the most global sales from 2013 to 2016:')</span><br>
+                                print<span class="python">(top_genres)</span>  
+                            </p>
+                            <button id="copyButton-eda-5"><i class="fas fa-copy"></i></button>
+                        </div>
+                    </div>
+                    <div class="img-eda-modelling">
+                        <img src="../asset/top_5_genre.png">
+                    </div>
+
+                    <div class="konten-isi-eda-modelling">
+                        <ul>
+                            <li>Top 5 Game Dengan Penjualan Tertinggi Di Dunia</li>
+                        </ul>
+                        <p>
+                            Proses analisis yang terakhir adalah melihat game dengan penjualan tertinggi berdasarkan total dari penjualan global setiap game. 
+                            Data tersebut dikelompokan berdasarkan kolom game dihitung dari total penjualan global.
+                        </p>
+                    </div>
+                    <div id="main-container-python">
+                        <div class="container">
+                            <h1>Python</h1>
+                            <p> 
+                                df_filtered = df_eda<span class="python">[(df_eda['Year_of_Release']</ >= 2013)</span> & <span class="python">(df_eda['Year_of_Release'] <= 2016)]</span> <br>
+                                sales_game = df_eda.groupby<span class="python"> ('Name').agg({'Global_Sales': pd.Series.<span class="python2">sum</span>})</span><br>
+                                top_names.nlargest<span class="python">(5, 'Global_Sales')</span><br>
+                                print<span class="python">('Top 5 games with the most global sales from 2013 to 2016:')</span><br>
+                                print<span class="python">(top_names)</span>
+                            </p>
+                            <button id="copyButton-eda-6"><i class="fas fa-copy"></i></button>
+                        </div>
+                    </div>
+                    <div class="img-eda-modelling">
+                        <img src="../asset/top_5_game.png">
+                    </div>
+                        <div class="line" style="padding-top: 40px;">
+                    </div>
+                </section>
+
+            <section class="grey" id="evaluation">
+                <h3> Evaluasi </h3>
+                <div class="img-business-understanding">
+                    <img src="../asset/evaluation.png">
+                </div>
+                <div class="konten-isi-evaluation">
+                    <p>
+                        Pada proses Evaluasi ini meliputi penilaian terhadap validitas data, keakuratan analisis statistik, serta relevansi informasi yang dihasilkan, metode statistik seperti mean, standar deviasi, dan median digunakan untuk mengukur karakteristik data seperti penjualan global. Evaluasi ini diawasi oleh Project Manager dari pihak RevoU untuk melihat kesesuaian hasil analisis dengan tujuan dari Business Understanding & Problem Definition. Melalui evaluasi ini, diharapkan kesimpulan yang ditarik dapat memberikan kontribusi signifikan dalam mengidentifikasi faktor-faktor penyebab penurunan penjualan video game global dan merumuskan strategi yang efektif untuk meningkatkan tren penjualan dalam tiga tahun kedepan.
+                     </p>
+                        <br>
+                </div>
+                    <div class="line">
+                </div>
+                </section>
+
+            <section class="grey" id="visualization">
+                    <h3> Data Visualisasi </h3>
+                        <div class="img-business-understanding">
+                                <img src="../asset/visualization.png">
+                                    </div>
+                                <div class="konten-isi-data-visualitation">
+                            <p>
+                                Tahap visualisasi ini dilakukan setelah tahap evaluasi telah selesai dan di setujui oleh Product Manager untuk dilakukan pembuatan dashboard visualisasi menggunakan Looker Studio. 
+                            Visualisasi ini dirancang untuk memudahkan pemahaman terhadap total penerbit, total plaform, total genre, total game, total penjualan global, trend penjualan global dari tahun ke tahun, penjualan game tertinggi di berbagai wilayah, penerbit terkemuka, genre yang populer, dan penjual global game tertinggi. 
+                            Dashboard visualisasi ini memiliki filter untuk menentukan tahun, penerbit, dan genre yang ingin ditampilkan secara visual. Dengan menggunakan visualisasi data, dashboard ini memberikan pandangan yang mudah di pahami, interaktif, dan mendalam terhadap dinamika industri game selama periode 
+                            waktu yang diteliti serta menjadi alat komunikasi efektif yang memudahkan pemangku kepentingan memahami hasil analisis dengan lebih baik.
+                            </p>
+                        <br> 
+                             <div class="img-visualitation">
+                                 <img src="../asset/visualisasi.png">
+                        </div>
+                    <br>
+                    <p>
+                        Untuk melihat lebih detail, silahkan klik <a href="../view/dashboard.html">Data Visualisasi </a>ini.
+                    </p>
+                </div>
+                        <div class="line">
+                    </div>
+        </section>
+            <section class="grey" id="communication">
+                <h3> Data Komunikasi </h3>
+                <div class="img-business-understanding">
+                    <img src="../asset/meeting.png">
+                </div>
+                <div class="konten-isi-data-communication">
+                    <p>
+                        Tahap yang terakhir adalah Communication Data, di lakukan proses pembuatan deck presentasi untuk melaporkan hasil temuan analisis yang disampaikan sesuai dengan metodologi analisis yang digunakan dan mudah dimengerti dari visualisasi data yang memberikan, 
+                        serta gambaran jelas dan mendalam tentang temuan tersebut kepada pemangku kepentingan. <br>
+                    </p>
+                    <div class="img-eda-modelling">
+                        <img src="../asset/communication.png">
+                    </div>
+                    <br>
+                    <p>
+                        Untuk melihat lebih detail, silahkan klik <a href="https://www.canva.com/design/DAGCqObYOAU/UV3YvzhduyrZh_cUaGs-YA/edit?utm_content=DAGCqObYOAU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Data Komunikasi </a>ini.
+                    </p>
+                </div>
+                    <div class="line">
+                </div>    
+        </section>
+            <div class=" notes">
+                <h3> Catatan </h3>
+                <div class="ringkasan-notes">
+                    <p>
+                        Tahap Analisis Video Game Global 
+                    </p>
+                </div>
+            </div>
+                <div id="main-container-notes">
+                    <div class="container-notes">
+                        <p> 
+                            &nbsp;&nbsp;&nbsp;&nbsp;Tahap analisis dari video game global ini dapat anda eksplorasi lebih mendalam,
+                            analisis ini hanya sebagai refrensi anda untuk memahami dasar-dasar dari sebuah analisis data.
+                            <br> <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Anda dapat menggabungkan dataset yang memiliki kesinambungan dengan dataset ini untuk memperkaya analisis,
+                            serta melakukan inovasi interaktif visualisasi data yang lebih baik lagi. 
+                        </p>
+                    </div>
+                </div>
+        </main>
+
+        <footer id="contact">
+            <div class="layar-dalam">
+                <div id="about-description">
+                    <h5>Video Game</h5>
+                    <p><a href="#about">Video game adalah gabungan teknologi, seni, dan pengalaman interaktif yang melibatkan pengembangan skenario, desain tindakan interaktif yang menghibur, aktivitas pemrograman, pengembangan karakter, seni grafis, desain suara, musik, integrasi, serta tes dan penilaian kualitas. <br> 
+                    </a></p>
+                    </div>
+                        <div>
+                            <h5>Kontak</h5>
+                            <p>
+                            <a href="mailto:firdan9474@gmail.com">firdan9474@gmail.com</a> <br> 
+                            0857-1641-5670
+                            </p>
+                        </div>
+                             <div>
+                                <h5>Alamat</h5>
+                             <p>
+                                    Jl. Gas Alam 100, Cicadas, Kec. Gn. Putri, Kabupaten Bogor, Jawa Barat 16964.
+                                <a href="https://maps.app.goo.gl/1CR1AoHaMd2VYF7U8">lihat maps</a>.</p>
+                            </div>
+                        </div>
+                        <div class="layar-dalam">
+                    <div class="copyright">
+                    &copy; 2024 <b>Video Games Analyst</b> All right reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- End Video -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../controller/javascript.js"></script>
+</body>
+
+</html>
